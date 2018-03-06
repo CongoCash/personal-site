@@ -1,0 +1,180 @@
+<div class="container-fluid">
+  <div class="row bg-image"></div>
+  <h1 id="typed" class="typed-placement"></h1>
+  <div class="banner">
+    <nav class="navbar navbar-expand-md navbar-light bg-faded row">
+      <div class="col-sm-8">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><p class="nav-item-color">David Jue</p></a>
+      </div>
+
+      <div class="collapse navbar-collapse col-sm-4" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto row">
+          <li class="nav-item active col-sm-3">
+            <a class="nav-link nav-item-color" href="#skills"><p class="nav-item-color">Skills</p><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item col-sm-3">
+            <a class="nav-link nav-item-color" href="#projects"><p class="nav-item-color">Projects</p></a>
+          </li>
+          <li class="nav-item col-sm-3">
+            <a class="nav-link nav-item-color" href="#contact"><p class="nav-item-color">Contact</p></a>
+          </li>
+          <li class="nav-item col-sm-3">
+            <a class="nav-link nav-item-color" href="/resume"><p class="nav-item-color">Resume</p></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-lg-5">
+      <div class="bio">
+        <h1>Hi! I'm David</h1>
+        <p class="hero-font">I was born and raised in San Francisco.  I previously worked as a Mechanical Engineer before deciding
+          to pursue a career as a Software Engineer.  I attended General Assembly's Web Development bootcamp and learned several
+          tech stacks such as Ruby on Rails, Javascript, and React.  Utilizing these new skills, I built several full stack web
+          applications.  I've used my new found knowledge and strong work ethic to continue building and learning after the bootcamp.
+        </p>
+        <p class="hero-font">
+          I am confident in my ability to produce strong work as a Software Engineer.  I look forward to the many opportunities
+          and challenges to come!
+        </p>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <%= image_tag('david.jpg', class: "img-responsive david") %>
+    </div>
+    <div class="col-lg-1"></div>
+  </div>
+
+  <div class="row row-margin">
+    <div class="col-sm-12">
+      <h1 id="skills">My Skills</h1>
+      <hr/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+      <%= image_tag('rails.png', class:"img-responsive image-fit") %>
+    </div>
+    <div class="col-sm-2">
+      <%= image_tag('react.png', class:"img-responsive image-fit") %>
+    </div>
+    <div class="col-sm-2">
+      <%= image_tag('javascript.png', class:"img-responsive image-fit") %>
+    </div>
+    <div class="col-sm-2">
+      <%= image_tag('node.png', class:"img-responsive image-fit") %>
+    </div>
+    <div class="col-sm-2">
+      <%= image_tag('postgres.png', class:"img-responsive image-fit") %>
+    </div>
+  </div>
+
+  <div class="row row-margin" id="projects">
+    <div class="col-sm-12">
+      <h1>My Projects</h1>
+      <hr/>
+    </div>
+  </div>
+
+  <div class="row project-margin">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row row-margin">
+        <div class="col-sm-6">
+          <h1>Yu-Gi-Oh</h1>
+          <p class="hero-font">Built with React and Ruby on Rails, this is a re-creation of the classic card game/anime Yu-Gi-Oh.  Players
+          can play couch co-op against each other using the original Yugi and Kaiba decks.</p>
+        </div>
+        <div class="col-sm-6">
+          <%= link_to image_tag('yugioh.png', class: "img-responsive image-fit"),
+                      'http://frozen-fjord-74866.herokuapp.com/' %>
+        </div>
+      </div>
+      <div class="row row-margin">
+        <div class="col-sm-6">
+          <%= link_to image_tag('fantasy.png', class: "img-responsive image-fit"),
+                      'https://peaceful-hamlet-76688.herokuapp.com/' %>
+        </div>
+        <div class="col-sm-6">
+          <h1>Fantasy Football Draft</h1>
+          <p class="hero-font">An imitation of the popular game Fantasy Football, this draft application was built in Ruby on
+          Rails and Javascript.  This draft application allows users to join leagues with friends and perform mock drafts.</p>
+        </div>
+      </div>
+      <div class="row row-margin">
+        <div class="col-sm-6">
+          <h1>Vagabond - Social Media</h1>
+          <p class="hero-font">Vagabond is a social media website built in Ruby on Rails.  This website is catered to college
+          students who want to share their travel experiences with the world.</p>
+        </div>
+        <div class="col-sm-6">
+          <%= link_to image_tag('vagabond.png', class: "img-responsive image-fit"),
+                      'https://blooming-bastion-77032.herokuapp.com/' %>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <footer class="row footer" id="contact">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3">
+      <div class="row">
+        <div class="col-sm-12 align-left">
+          <h5>Contact</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-1">
+          <%= image_tag('email.png', size: 20) %>
+        </div>
+        <div class="col-sm-8 align-left">
+          <span>davjue@gmail.com</span>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-1">
+          <%= image_tag('phone.png', size: 20) %>
+        </div>
+        <div class="col-sm-8 align-left">
+          <span>415-810-5612</span>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-1">
+          <%= image_tag('location.png', size: 20) %>
+        </div>
+        <div class="col-sm-8 align-left">
+          <span>San Francisco, CA</span>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+
+    <div class="col-sm-2 align-center margin-icon">
+      <%= link_to image_tag('linkedin.png', size: 50, class: "img-responsive image-fit"),
+                  'https://www.linkedin.com/in/davjue/' %>
+    </div>
+    <div class="col-sm-2 align-center margin-icon">
+      <%= link_to image_tag('github.png', size: 50, class: "img-responsive image-fit"),
+                  'https://github.com/CongoCash/' %>
+    </div>
+    <div class="col-sm-2 align-center margin-icon">
+      <%= link_to image_tag('resume.png', size: 50, class: "img-responsive image-fit"),
+                  resume_path %>
+    </div>
+    <div class="col-sm-2"></div>
+  </footer>
+
+</div>

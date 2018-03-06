@@ -1,0 +1,96 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.bg-image {
+  background-image:
+          linear-gradient( rgba(0,0,0,.9), rgba(0,0,0,.5) ),
+          url("https://www.omm.com/~/media/images/site/locations/san_francisco_780x520px.ashx");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.banner {
+  width: 95%;
+  position: absolute;
+  top: 0;
+}
+
+.nav-item-color {
+  color: white;
+}
+
+.typed-placement {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  color: white;
+}
+
+@font-face {
+  font-family: heroFont;
+  src: url('Hero.otf');
+}
+
+.hero-font {
+  font-family: heroFont;
+}
+
+.bio {
+  margin-top: 50px;
+}
+
+.david {
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 63px;
+}
+
+.row-margin {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.image-fit {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.text-label {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.margin-icon {
+  margin-top: 10px;
+}
+
+.boxes {
+  border: 2px solid grey;
+}
+
+.footer {
+  background-color: darkgrey;
+  padding: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.project-margin {
+  margin-bottom: 50px;
+}
+
+.margin-icon {
+  margin-top: 30px;
+}
+
+.title-margin {
+  margin-top: 85px;
+}
